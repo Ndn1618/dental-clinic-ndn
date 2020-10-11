@@ -161,6 +161,7 @@
     width: 100%;
     margin-left: 0;
     text-align: center;
+    padding-bottom: 117px;
   }
 
   .sitenav--nojs .sitenav__list {
@@ -184,6 +185,7 @@
     padding-bottom: 23px;
     color: #FFD600;
     border: 1px solid #FFD600;
+    text-transform: uppercase;
     transition: color 0.3s ease,
       background-color 0.3s ease;
   }
@@ -213,6 +215,18 @@
 
   .sitenav--nojs .sitenav__menu-toggler {
     display: none;
+  }
+
+  .sitenav--open .sitenav-social__links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    bottom: -436px;
+    left: 0;
+    background-color: $blue;
   }
 
   .sitenav--nojs .sitenav-social__links {
