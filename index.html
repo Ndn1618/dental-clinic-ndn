@@ -96,6 +96,37 @@
         </div>
       </div>
     </section>
+
+    <section class="appointment">
+      <div class="container appointment__container">
+        <h2 class="visually-hidden">Dental treatment and prosthetics</h2>
+        <ul class="appintement__list">
+          <li class="appointment__list-item appointment__item">
+            <h3 class="appointment__item-heading">Treatment</h3>
+            <p class="appointment__item-text">All types of dental treatment are carried out using the most modern technologies.</p>
+          </li>
+          <li class="appointment__item">
+            <h3 class="appointment__item-heading">Prosthetics</h3>
+            <p class="appointment__item-text">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
+          </li>
+        </ul>
+        <form class="appointment__form" action="https://echo.htmlacademy.ru" method="GET">
+          <h3 class="appointment__form-heading">Appointment</h3>
+          <label class="visually-hidden" for="name-input">Your name</label>
+          <input class="appointment__form-input" type="text" id="name-input" placeholder="Name" name="Name" spellcheck="false" required>
+
+          <label class="visually-hidden" for="name-input">Your phone number</label>
+          <input class="appointment__form-input" type="tel" id="phone-input" placeholder="Phone" name="Phone" spellcheck="false" pattern="[0-9]{5,10}" required>
+
+          <label class="appointment__form-checkbox-span" for="checkbox-input" aria-label="Agreement">
+            <span class="appointment__form-span">I give my consent to the storage and processing of personal data</span>
+            <input class="appointment__form-checkbox" type="checkbox" id="checkbox-input" name="agreement" required>
+          </label>
+
+          <button class="button button--yellow" type="submit">Appointment</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="js/main.js"></script>
