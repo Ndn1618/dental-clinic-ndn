@@ -1,0 +1,144 @@
+.corousel {
+  padding-top: 307px;
+  padding-bottom: 147px;
+  background-image: url("../../img/woman-smiling.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.corousel__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.corousel__list {
+  @include reset-list;
+  display: flex;
+  overflow: hidden;
+}
+
+.corousel__item {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex-shrink: 0;
+  padding-bottom: 136px;
+}
+
+.corousel__text{
+  order: -1;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 21px;
+}
+
+.corousel__heading {
+  max-width: 543px;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.corousel__slider-button {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+  background-color: $yellow;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.corousel__slider-button-next {
+  width: 70px;
+  background-image: url("../../img/btn-next.png");
+}
+
+.corousel__slider-button-prev {
+  width: 42px;
+  margin-right: 9px;
+  background-image: url("../../img/btn-prev.png");
+}
+
+@include retina-bg {
+  .corousel {
+    background-image: url("../../img/woman-smiling@2x.jpg");
+  }
+
+  .corousel__slider-button-prev {
+    background-image: url("../../img/btn-prev@2x.png");
+  }
+
+  .corousel__slider-button-next {
+    background-image: url("../../img/btn-next@2x.png");
+  }
+}
+
+@include breakpoint-down (865px) {
+  .corousel {
+    background-position: center right calc(50% + 100px);
+  }
+
+  .corousel__heading {
+    max-width: 400px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .corousel {
+    background-position: center right calc(50% + 50px);
+  }
+}
+
+@include breakpoint-down (690px) {
+  .corousel {
+    background-image: url("../../img/woman-smiling-small.png");
+    padding-top: 531px;
+    padding-bottom: 0;
+    background-position: center center;
+  }
+
+  .corousel__list {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .corousel__item {
+    background-color: #fff;
+    padding-top: 21px;
+    padding-bottom: 25px;
+  }
+
+  .corousel__heading {
+    max-width: 333px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .corousel__text {
+    max-width: 227px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .corousel__button {
+    display: none;
+  }
+
+  .corousel__slider-buttons {
+    order: -1;
+  }
+}

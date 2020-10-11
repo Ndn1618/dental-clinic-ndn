@@ -25,3 +25,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@include breakpoint-down (1024px) {
+  body {
+    padding-top: 68px;
+  }
+}

@@ -440,6 +440,12 @@ img {
   height: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  body {
+    padding-top: 68px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -885,6 +891,167 @@ img {
   .sitenav--nojs .sitenav-social__link:nth-of-type(2),
   .sitenav--nojs .sitenav-social__link:nth-of-type(3) {
     margin-left: 0;
+  }
+}
+
+.site-main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.corousel {
+  padding-top: 307px;
+  padding-bottom: 147px;
+  background-image: url("../../img/woman-smiling.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.corousel__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.corousel__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.corousel__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-bottom: 136px;
+}
+
+.corousel__text {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 21px;
+}
+
+.corousel__heading {
+  max-width: 543px;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.corousel__slider-button {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+  background-color: #FFD600;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.corousel__slider-button-next {
+  width: 70px;
+  background-image: url("../../img/btn-next.png");
+}
+
+.corousel__slider-button-prev {
+  width: 42px;
+  margin-right: 9px;
+  background-image: url("../../img/btn-prev.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .corousel {
+    background-image: url("../../img/woman-smiling@2x.jpg");
+  }
+  .corousel__slider-button-prev {
+    background-image: url("../../img/btn-prev@2x.png");
+  }
+  .corousel__slider-button-next {
+    background-image: url("../../img/btn-next@2x.png");
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .corousel {
+    background-position: center right calc(50% + 100px);
+  }
+  .corousel__heading {
+    max-width: 400px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .corousel {
+    background-position: center right calc(50% + 50px);
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .corousel {
+    background-image: url("../../img/woman-smiling-small.png");
+    padding-top: 531px;
+    padding-bottom: 0;
+    background-position: center center;
+  }
+  .corousel__list {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .corousel__item {
+    background-color: #fff;
+    padding-top: 21px;
+    padding-bottom: 25px;
+  }
+  .corousel__heading {
+    max-width: 333px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .corousel__text {
+    max-width: 227px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .corousel__button {
+    display: none;
+  }
+  .corousel__slider-buttons {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 /*# sourceMappingURL=main.css.map */
