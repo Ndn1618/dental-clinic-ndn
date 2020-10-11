@@ -1,0 +1,84 @@
+.sitenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  background-color: $blue;
+  border-radius: 5px;
+  padding: 20px 33px 20px 0;
+}
+
+.sitenav__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.sitenav__item {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.item__link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: $white-text;
+  line-height: 21px;
+  transition: color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.sitenav__item:hover .item__link {
+  color: #FFD600;
+}
+
+.sitenav__item:active .item__link {
+  opacity: 0.6;
+}
+
+.sitenav-social__links {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav-social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: opacity 0.3s ease;
+}
+
+.sitenav-social__link:nth-of-type(1) {
+  background-image: url("../../img/vk.png");
+  background-size: contain;
+}
+
+.sitenav-social__link:nth-of-type(2) {
+  background-image: url("../../img/instagram.png");
+  background-size: 16px;
+  margin-left: 13px;
+}
+
+.sitenav-social__link:nth-of-type(3) {
+  background-image: url("../../img/twitter.png");
+  background-size: 18px;
+  margin-left: 12px;
+}
+
+.sitenav-social__link:hover {
+  opacity: 0.8;
+}
+
+.sitenav-social__link:active {
+  opacity: 0.6;
+}
