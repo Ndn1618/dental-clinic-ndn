@@ -1,0 +1,27 @@
+.button {
+  max-width: 265px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 25px 32px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.button--smaller {
+  max-width: 230px;
+}
+
+.button--blue {
+  color: #ffffff;
+  background-color: $blue;
+}
