@@ -163,8 +163,19 @@
     text-align: center;
   }
 
+  .sitenav--nojs .sitenav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
   .sitenav--open .sitenav__item {
     margin: 0;
+  }
+  .sitenav--nojs .sitenav__item {
+    text-align: center;
   }
 
   .sitenav--open .item__link {
@@ -177,7 +188,7 @@
       background-color 0.3s ease;
   }
 
-  .sitenav--open .item:hover .item__link {
+  .sitenav--open .item:active .item__link {
     color: $blue;
     background-color: #FFD600;
   }
@@ -198,5 +209,28 @@
   .sitenav--open .sitenav__menu-toggler {
     background-image: url("../../img/close.png");
     background-size: 22px 20px;
+  }
+
+  .sitenav--nojs .sitenav__menu-toggler {
+    display: none;
+  }
+
+  .sitenav--nojs .sitenav-social__links {
+    display: flex;
+  }
+}
+
+@include breakpoint-down (470px) {
+  .sitenav--nojs .sitenav__list {
+    flex-direction: column;
+  }
+
+  .sitenav--nojs .sitenav-social__links {
+    flex-direction: column;
+  }
+
+  .sitenav--nojs .sitenav-social__link:nth-of-type(2),
+  .sitenav--nojs .sitenav-social__link:nth-of-type(3) {
+    margin-left: 0;
   }
 }
