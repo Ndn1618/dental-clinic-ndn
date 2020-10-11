@@ -53,6 +53,15 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  transition: opacity 0.3s ease;
+}
+
+.corousel__slider-button:hover {
+  opacity: 0.8;
+}
+
+.corousel__slider-button:active {
+  opacity: 0.6;
 }
 
 .corousel__slider-button-next {

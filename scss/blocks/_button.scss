@@ -24,4 +24,13 @@
 .button--blue {
   color: #ffffff;
   background-color: $blue;
+  transition: opacity 0.3s ease;
+}
+
+.button--blue:hover {
+  opacity: 0.8;
+}
+
+.button--blue:active {
+  opacity: 0.6;
 }

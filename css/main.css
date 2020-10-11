@@ -495,6 +495,16 @@ img {
 .button--blue {
   color: #ffffff;
   background-color: #0055B8;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.button--blue:hover {
+  opacity: 0.8;
+}
+
+.button--blue:active {
+  opacity: 0.6;
 }
 
 .site-header {
@@ -972,6 +982,16 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.corousel__slider-button:hover {
+  opacity: 0.8;
+}
+
+.corousel__slider-button:active {
+  opacity: 0.6;
 }
 
 .corousel__slider-button-next {
