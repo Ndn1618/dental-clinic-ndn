@@ -8,19 +8,17 @@
   left: 0;
 }
 
-.site-header__container {
-  display: flex;
-  flex-direction: column;
+.site-header__container-inner {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 52px;
   padding-top: 12px;
 }
 
 .site-header__top {
-  position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 56px;
 }
 
 .site-header__top-phone,
@@ -97,5 +95,17 @@
 
   .site-header__top-work::before {
     background-image: url("../../img/clock@2x.png");
+  }
+}
+
+@include breakpoint-down (1024px) {
+  .site-header__container-inner {
+    padding: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .site-header__top {
+    display: none;
   }
 }
