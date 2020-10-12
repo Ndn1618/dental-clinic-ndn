@@ -505,16 +505,31 @@ img {
 }
 
 .button--blue:active,
-.button--yellow:avtive {
+.button--yellow:active,
+.button--feedback:active {
   opacity: 0.6;
 }
 
 .button--yellow {
   background-color: #FFD600;
   color: #272727;
-  text-transform: capitalize;
+  text-transform: none;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+}
+
+.button--feedback {
+  border: 2px solid #0055B8;
+  color: #4D4D4D;
+  background-color: #ffffff;
+  text-transform: none;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.button--feedback:hover {
+  background-color: #0055B8;
+  color: #ffffff;
 }
 
 .slider-button {
@@ -573,7 +588,7 @@ img {
 .site-header__container-inner {
   position: relative;
   z-index: 1;
-  padding-bottom: 52px;
+  padding-bottom: 45px;
   padding-top: 12px;
 }
 
