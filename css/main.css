@@ -512,6 +512,7 @@ img {
 .button--yellow {
   background-color: #FFD600;
   color: #272727;
+  text-transform: capitalize;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
@@ -1203,23 +1204,28 @@ img {
   margin-bottom: 12px;
 }
 
-.appointment__form-input::-webkit-input-placeholder {
+.appointment__form-input::-webkit-input-placeholder,
+.appointment__form-input:focus::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input:-ms-input-placeholder {
+.appointment__form-input:-ms-input-placeholder,
+.appointment__form-input:focus:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input::-ms-input-placeholder {
+.appointment__form-input::-ms-input-placeholder,
+.appointment__form-input:focus::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input::placeholder {
+.appointment__form-input::placeholder,
+.appointment__form-input:focus::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input:not(:placeholder-shown) {
+.appointment__form-input:not(:placeholder-shown),
+.appointment__form-input:focus {
   background-color: #fff;
   border: 1px solid #0055B8;
 }
@@ -1301,12 +1307,256 @@ img {
 }
 
 @media only screen and (max-width: 690px) {
+  .appointment__container {
+    padding-bottom: 70px;
+  }
   .appointment__list,
   .appointment__item:last-child {
     display: none;
   }
   .appointment__form {
     top: 0;
+  }
+}
+
+.services__container {
+  padding-bottom: 50px;
+}
+
+.services__heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.services__description {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #4D4D4D;
+  text-align: center;
+  font-weight: 300;
+}
+
+.services__slider {
+  position: relative;
+  z-index: 1;
+  padding-left: 49px;
+  padding-right: 67px;
+}
+
+.services__slider-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.services__slider-list-item {
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 28px 52px 24px;
+  background-color: #ffffff;
+}
+
+.service::before {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+}
+
+.services__slider-list-item:nth-child(1)::before {
+  width: 69px;
+  height: 68px;
+  margin-bottom: 13px;
+  background-image: url("../../img/dental-treatment.png");
+}
+
+.services__slider-list-item:nth-child(2)::before {
+  width: 77px;
+  height: 66px;
+  margin-bottom: 13px;
+  background-image: url("../../img/hygiene.png");
+}
+
+.services__slider-list-item:nth-child(3)::before {
+  width: 66px;
+  height: 66px;
+  margin-bottom: 13px;
+  background-image: url("../../img/diagnostics.png");
+}
+
+.services__slider-list-item:nth-child(4)::before {
+  width: 73px;
+  height: 62px;
+  margin-bottom: 13px;
+  background-image: url("../../img/children-denistry.png");
+}
+
+.services__slider-list-item:nth-child(5)::before {
+  width: 69px;
+  height: 68px;
+  margin-bottom: 13px;
+  background-image: url("../../img/dental-treatment.png");
+}
+
+.service__name {
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.service__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+}
+
+.service__price::before {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #0A60C3;
+  content: "";
+  margin-bottom: 13px;
+}
+
+.service__price-old {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 3px;
+}
+
+.service__price-sale {
+  line-height: 21px;
+  color: #0055B8;
+}
+
+.services__slider-button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 42px;
+  height: 49px;
+  border: none;
+  background: none;
+  outline: none;
+  border: 2px solid #1D6ECB;
+  background-color: #ffffff;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: 15px 34px;
+  background-position: center center;
+  -webkit-transition: opacity 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.services__slider-button:hover,
+.services__slider-button:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.services__slider-button:active {
+  opacity: 0.6;
+}
+
+.services__slider-button-prev {
+  left: 0;
+  background-image: url("../img/arrow-left.svg");
+}
+
+.services__slider-button-next {
+  right: 0;
+  background-image: url("../img/arrow-right.svg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .services__slider-list-item:nth-child(1)::before {
+    width: 138px;
+    height: 136x;
+    background-image: url("../../img/dental-treatment@2x.png");
+  }
+  .services__slider-list-item:nth-child(2)::before {
+    width: 154px;
+    height: 132px;
+    background-image: url("../../img/hygiene@2x.png");
+  }
+  .services__slider-list-item:nth-child(3)::before {
+    width: 132px;
+    height: 132px;
+    background-image: url("../../img/diagnostics@2x.png");
+  }
+  .services__slider-list-item:nth-child(4)::before {
+    width: 146px;
+    height: 124px;
+    background-image: url("../../img/children-denistry@2x.png");
+  }
+  .services__slider-list-item:nth-child(5)::before {
+    width: 138px;
+    height: 136px;
+    background-image: url("../../img/dental-treatment@2x.png");
+  }
+}
+
+@media only screen and (max-width: 984px) {
+  .services__slider {
+    padding-left: 89px;
+    padding-right: 107px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .services__container {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  .services__slider {
+    padding: 0;
+  }
+  .services__slider-button {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

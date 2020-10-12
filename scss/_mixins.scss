@@ -70,3 +70,13 @@
 
   }
 }
+
+// hr
+
+@mixin line ($line-color, $line-width) {
+  display: block;
+  width: $line-width;
+  height: 2px;
+  background-color: $line-color;
+  content: "";
+}

@@ -40,5 +40,6 @@
 .button--yellow {
   background-color: $yellow;
   color: $dark-text;
+  text-transform: capitalize;
   transition: opacity 0.3s ease;
 }

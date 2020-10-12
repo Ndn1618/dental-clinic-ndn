@@ -95,11 +95,13 @@
   margin-bottom: 12px;
 }
 
-.appointment__form-input::placeholder {
+.appointment__form-input::placeholder,
+.appointment__form-input:focus::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input:not(:placeholder-shown) {
+.appointment__form-input:not(:placeholder-shown),
+.appointment__form-input:focus {
   background-color: #fff;
   border: 1px solid $blue;
 }
@@ -174,6 +176,10 @@
 }
 
 @include breakpoint-down (690px) {
+  .appointment__container {
+    padding-bottom: 70px;
+  }
+
   .appointment__list,
   .appointment__item:last-child {
     display: none;
