@@ -1,0 +1,173 @@
+.quality__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 69px;
+  padding-right: 0;
+  padding-left: 130px;
+}
+
+.quality__picture {
+  flex-shrink: 0;
+}
+
+.quality__picture-img {
+  display: block;
+  width: 750px;
+  height: 600px;
+  margin-left: 39px;
+}
+
+.quality__content {
+  max-width: 534px;
+  background-image: url("../../img/section-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 275px auto;
+  background-position: top 51px right 15px;
+  padding-top: 32px;
+}
+
+.quality__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 491px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.quality__heading::before {
+  @include line(#FFD600, 50px);
+  margin-bottom: 16px;
+}
+
+.quality__text {
+  font-weight: 300;
+  margin: 0;
+}
+
+.quality__text-span {
+  display: block;
+}
+
+.quality__list {
+  display: flex;
+  flex-direction: column;
+  @include reset-list;
+  margin-bottom: 34px;
+}
+
+.quality__item {
+  font-weight: 300;
+}
+
+.quality__signature-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quality__signature {
+  display: block;
+  width: 85px;
+  height: 70px;
+  background-image: url("../../img/signature.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 36px;
+  flex-shrink: 0;
+}
+
+.quality__button {
+  text-transform: none;
+}
+
+@include retina-bg {
+  .quality__signature {
+    background-image: url("../../img/signature@2x.png");
+  }
+}
+
+@include breakpoint-down (1440px) {
+  .quality__picture-img {
+    width: 650px;
+    height: 600px;
+  }
+}
+
+@include breakpoint-down (1170px) {
+  .quality__container {
+    padding-left: 20px;
+  }
+}
+
+@include breakpoint-down (1024px) {
+  .quality__picture-img {
+    width: 443px;
+    height: 600px;
+  }
+}
+
+@include breakpoint-down (865px) {
+  .quality__picture-img {
+    margin-left: 12px;
+  }
+
+  .quality__content {
+    padding-top: 0;
+  }
+
+  .quality__heading {
+    margin-bottom: 5px;
+  }
+
+  .quality__list {
+    margin-bottom: 28px;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .quality__container {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .quality__picture {
+    align-self: center;
+    order: -1;
+  }
+
+  .quality__picture-img {
+    margin-bottom: 21px;
+    margin-left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .quality__content {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 18px;
+    background-position: left 20px top 20px;
+  }
+
+  .quality__heading {
+    align-items: flex-start;
+  }
+
+  .quality__signature-button {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include breakpoint-down (375px) {
+  .quality__picture-img {
+    width: auto;
+    height: 309px;
+    object-fit: none;
+    margin-bottom: 30px;
+  }
+}
