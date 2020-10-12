@@ -1585,4 +1585,163 @@ img {
     display: none;
   }
 }
+
+.advantages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.advantages__picture {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.advantages__picture-img {
+  display: block;
+  width: 750px;
+  height: 613px;
+  margin-right: 105px;
+}
+
+.advantages__heading {
+  max-width: 385px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.advantages__heading::before {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #FFD600;
+  content: "";
+  margin-bottom: 16px;
+}
+
+.advantages__text {
+  max-width: 534px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__text-span {
+  display: block;
+}
+
+.advantages__list {
+  max-width: 542px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.advantages__list-item {
+  margin-bottom: 18px;
+}
+
+.advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantage::before {
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 31px;
+  content: "";
+}
+
+.advantage:nth-child(1)::before {
+  width: 67px;
+  height: 67px;
+  background-image: url("../../img/expert.png");
+}
+
+.advantage:nth-child(2)::before {
+  width: 72px;
+  height: 70px;
+  background-image: url("../../img/modern-technology.png");
+}
+
+.advantage:nth-child(3)::before {
+  width: 62px;
+  height: 62px;
+  background-image: url("../../img/location-working-hours.png");
+}
+
+.advantage__heading {
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.advantage__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .advantage:nth-child(1)::before {
+    width: 134px;
+    height: 134px;
+    background-image: url("../../img/expert@2x.png");
+  }
+  .advantage:nth-child(2)::before {
+    width: 144px;
+    height: 140px;
+    background-image: url("../../img/modern-technology@2x.png");
+  }
+  .advantage:nth-child(3)::before {
+    width: 124px;
+    height: 124px;
+    background-image: url("../../img/location-working-hours@2x.png");
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .advantages__picture-img {
+    width: 641px;
+    height: 670px;
+    margin-right: 104px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .advantages__picture-img {
+    width: 441px;
+    height: 662px;
+    margin-right: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .advantages__picture-img {
+    width: 375px;
+    height: 371px;
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
