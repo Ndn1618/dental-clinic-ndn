@@ -1612,6 +1612,13 @@ img {
   margin-right: 12px;
 }
 
+.advantages__content {
+  background-image: url("../../img/section-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 275px auto;
+  background-position: top 27px left;
+}
+
 .advantages__heading {
   max-width: 385px;
   font-weight: 500;
@@ -1763,6 +1770,7 @@ img {
   .advantages__content {
     padding-right: 20px;
     padding-left: 20px;
+    background-position: top 27px left 20px;
   }
   .advantages__heading {
     max-width: 100%;
