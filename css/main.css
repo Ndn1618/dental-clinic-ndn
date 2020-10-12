@@ -529,8 +529,12 @@ img {
   color: #4D4D4D;
   background-color: #ffffff;
   text-transform: none;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: background-color 0.3s ease,
+ color 0.3s ease,
+ opacity 0.3s ease;
+  transition: background-color 0.3s ease,
+ color 0.3s ease,
+ opacity 0.3s ease;
 }
 
 .button--feedback:hover {
@@ -555,10 +559,15 @@ img {
   background-repeat: no-repeat;
   background-size: 15px 34px;
   background-position: center center;
-  -webkit-transition: opacity 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: opacity 0.3s ease, box-shadow 0.3s ease;
-  transition: opacity 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-transition: opacity 0.3s ease,
+ -webkit-box-shadow 0.3s ease;
+  transition: opacity 0.3s ease,
+ -webkit-box-shadow 0.3s ease;
+  transition: opacity 0.3s ease,
+ box-shadow 0.3s ease;
+  transition: opacity 0.3s ease,
+ box-shadow 0.3s ease,
+ -webkit-box-shadow 0.3s ease;
 }
 
 .slider-button:hover,
@@ -774,8 +783,10 @@ img {
   text-decoration: none;
   color: #ffffff;
   line-height: 21px;
-  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: color 0.3s ease,
+ opacity 0.3s ease;
+  transition: color 0.3s ease,
+ opacity 0.3s ease;
 }
 
 .sitenav__item:hover .item__link {
@@ -917,8 +928,10 @@ img {
     color: #FFD600;
     border: 1px solid #FFD600;
     text-transform: uppercase;
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: color 0.3s ease,
+ background-color 0.3s ease;
+    transition: color 0.3s ease,
+ background-color 0.3s ease;
   }
   .sitenav--open .item:active .item__link {
     color: #0055B8;
@@ -1007,8 +1020,10 @@ img {
     color: #FFD600;
     border: 1px solid #FFD600;
     text-transform: uppercase;
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: color 0.3s ease,
+ background-color 0.3s ease;
+    transition: color 0.3s ease,
+ background-color 0.3s ease;
   }
   .sitenav--nojs .item:active .item__link {
     color: #0055B8;
@@ -1623,7 +1638,7 @@ img {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .services__slider-list-item:nth-child(1)::before {
     width: 138px;
-    height: 136x;
+    height: 136px;
     background-image: url("../../img/dental-treatment@2x.png");
   }
   .services__slider-list-item:nth-child(2)::before {
