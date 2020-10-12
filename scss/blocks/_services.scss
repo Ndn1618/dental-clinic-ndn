@@ -1,9 +1,22 @@
 .services__container {
+  padding-top: 10px;
   padding-bottom: 50px;
+  background-image: url("../../img/section-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 275px auto;
+  background-position: top 27px center;
+}
+
+.services__heading::before {
+  @include line (#FFD600, 50px);
+  margin-bottom: 16px;
 }
 
 .services__heading {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
