@@ -1,0 +1,179 @@
+.team__container {
+  padding-top: 8px;
+  padding-bottom: 47px;
+  background-image: url("../../img/section-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 275px auto;
+  background-position: top 27px center;
+}
+
+.team__heading::before {
+  @include line (#FFD600, 50px);
+  margin-bottom: 16px;
+}
+
+.team__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.team__description {
+  max-width: 872px;
+  margin: 0 auto 34px;
+  color: #4D4D4D;
+  text-align: center;
+  font-weight: 300;
+}
+
+.team__slider {
+  position: relative;
+  z-index: 1;
+  padding-left: 67px;
+  padding-right: 67px;
+}
+
+.team__slider-list {
+  @include reset-list;
+  display: flex;
+  overflow: hidden;
+  margin-left: -26px;
+}
+
+.team__slider-list-item {
+  width: 300px;
+  margin-left: 26px;
+  margin-right: 26px;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.team__item::before {
+  display: block;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+}
+
+.team__item:nth-child(1)::before {
+  background-image: url("../../img/anna.jpg");
+}
+
+.team__item:nth-child(2)::before {
+  background-image: url("../../img/ivan.jpg");
+}
+
+.team__item:nth-child(3)::before {
+  background-image: url("../../img/larisa.jpg");
+}
+
+.team__item-name {
+  font-weight: 500;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.team__item-job {
+  font-weight: 300;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+}
+
+.team__slider-button {
+  top: calc(50% - 32px);
+}
+
+@include retina-bg {
+  .team__item:nth-child(1)::before {
+    background-image: url("../../img/anna@2x.jpg");
+  }
+
+  .team__item:nth-child(2)::before {
+    background-image: url("../../img/ivan@2x.jpg");
+  }
+
+  .team__item:nth-child(3)::before {
+    background-image: url("../../img/larisa@2x.jpg");
+  }
+}
+
+@include breakpoint-down (1024px) {
+  .team__slider-list {
+    margin-left: -21px;
+    margin-right: -4px;
+  }
+
+  .team__slider-list-item {
+    width: 253px;
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+
+  .team__item::before {
+    width: 253px;
+  }
+
+  .team__item:nth-child(1)::before {
+    background-image: url("../../img/anna-sm.jpg");
+  }
+
+  .team__item:nth-child(2)::before {
+    background-image: url("../../img/ivan-sm.jpg");
+  }
+
+  .team__item:nth-child(3)::before {
+    background-image: url("../../img/larisa-sm.jpg");
+  }
+
+  @include retina-bg {
+    .team__item:nth-child(1)::before {
+      background-image: url("../../img/anna-sm@2x.jpg");
+    }
+
+    .team__item:nth-child(2)::before {
+      background-image: url("../../img/ivan-sm@2x.jpg");
+    }
+
+    .team__item:nth-child(3)::before {
+      background-image: url("../../img/larisa-sm@2x.jpg");
+    }
+  }
+}
+
+@include breakpoint-down (470px) {
+  .team__container {
+    padding-left: 34px;
+  }
+
+  .team__description {
+    max-width: 301px;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  .team__slider {
+    padding: 0;
+  }
+
+  .team__slider-button {
+    display: none;
+  }
+}

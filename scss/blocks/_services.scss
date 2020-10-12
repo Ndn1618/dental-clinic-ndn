@@ -137,45 +137,6 @@
   color: $blue;
 }
 
-.services__slider-button {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 49px;
-  border: none;
-  background: none;
-  outline: none;
-  border: 2px solid #1D6ECB;
-  background-color: #ffffff;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-size: 15px 34px;
-  background-position: center center;
-  transition: opacity 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.services__slider-button:hover,
-.services__slider-button:focus {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.services__slider-button:active {
-  opacity: 0.6;
-}
-
-.services__slider-button-prev {
-  left: 0;
-  background-image: url("../img/arrow-left.svg");
-}
-
-.services__slider-button-next {
-  right: 0;
-  background-image: url("../img/arrow-right.svg");
-}
-
 @include retina-bg {
   .services__slider-list-item:nth-child(1)::before {
     width: 138px;
