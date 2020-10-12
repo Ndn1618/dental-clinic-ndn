@@ -1,0 +1,212 @@
+.reviews__container {
+  padding-top: 13px;
+  padding-bottom: 72px;
+  background-image: url("../../img/section-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 275px auto;
+  background-position: top 30px center;
+}
+
+.reviews__heading::before {
+  @include line (#FFD600, 50px);
+  margin-bottom: 16px;
+}
+
+.reviews__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.reviews__description {
+  max-width: 483px;
+  margin: 0 auto 35px;
+  color: #4D4D4D;
+  text-align: center;
+  font-weight: 300;
+}
+
+.reviews__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -19px;
+  margin-right: -19px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.reviews__list-item {
+  width: 354px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.review::before {
+  display: block;
+  width: 354px;
+  height: 240px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 31px;
+  content: "";
+}
+
+.review:nth-child(1)::before {
+  background-image: url("../../img/ivanov.jpg");
+}
+
+.review:nth-child(2)::before,
+.review:nth-child(3)::before {
+  background-image: url("../../img/petrov.jpg");
+}
+
+.review__name {
+  font-weight: 500;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.review__blockquote {
+  margin: 0;
+  color: #4D4D4D;
+  font-weight: 300;
+}
+
+.reviews__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include retina-bg {
+  .review:nth-child(1)::before {
+    background-image: url("../../img/ivanov@2x.jpg");
+  }
+
+  .review:nth-child(2)::before,
+  .review:nth-child(3)::before {
+    background-image: url("../../img/petrov@2x.jpg");
+  }
+}
+
+@include breakpoint-between (1019px, 1170px) {
+  .reviews__list {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .reviews__list-item {
+    width: 306px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .review::before {
+    width: 306px;
+  }
+
+  .review:nth-child(1)::before {
+    background-image: url("../../img/ivanov-sm.jpg");
+  }
+
+  .review:nth-child(2)::before,
+  .review:nth-child(3)::before {
+    background-image: url("../../img/petrov-sm.jpg");
+  }
+
+  @include retina-bg {
+    .review:nth-child(1)::before {
+      background-image: url("../../img/ivanov-sm@2x.jpg");
+    }
+
+    .review:nth-child(2)::before,
+    .review:nth-child(3)::before {
+      background-image: url("../../img/petrov-sm@2x.jpg");
+    }
+  }
+}
+
+@include breakpoint-down (1018px) {
+  .review:nth-child(3) {
+    display: none;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .reviews__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .review {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .review::before {
+    flex-shrink: 0;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .review:nth-child(2) {
+    display: none;
+  }
+}
+
+@include breakpoint-down (690px) {
+  .review::before {
+    width: 306px;
+  }
+
+  .review:nth-child(1)::before {
+    background-image: url("../../img/ivanov-sm.jpg");
+  }
+
+  @include retina-bg {
+    .review:nth-child(1)::before {
+      background-image: url("../../img/ivanov-sm@2x.jpg");
+    }
+  }
+}
+
+@include breakpoint-down (530px) {
+  .reviews__container {
+    width: calc(100% - 70px);
+    text-align: center;
+  }
+
+  .reviews__heading {
+    margin-bottom: 10px;
+  }
+
+  .review {
+    width: 306px;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .review::before {
+    margin-bottom: 31px;
+    margin-right: 0;
+  }
+}
