@@ -105,7 +105,7 @@
             <h3 class="appointment__item-heading">Treatment</h3>
             <p class="appointment__item-text">All types of dental treatment are carried out using the most modern technologies.</p>
           </li>
-          <li class="appointment__item">
+          <li class="appointment__list-item appointment__item">
             <h3 class="appointment__item-heading">Prosthetics</h3>
             <p class="appointment__item-text">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
           </li>
@@ -120,7 +120,8 @@
 
           <label class="appointment__form-checkbox-span" for="checkbox-input" aria-label="Agreement">
             <span class="appointment__form-span">I give my consent to the storage and processing of personal data</span>
-            <input class="appointment__form-checkbox" type="checkbox" id="checkbox-input" name="agreement" required>
+            <input class="visually-hidden appointment__form-checkbox" type="checkbox" id="checkbox-input" name="agreement" required>
+            <span class="appointment__form-checkbox-style"></span>
           </label>
 
           <button class="button button--yellow" type="submit">Appointment</button>

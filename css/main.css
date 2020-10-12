@@ -1074,4 +1074,180 @@ img {
             order: -1;
   }
 }
+
+.appointment__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-bottom: 70px;
+}
+
+.appintement__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.appointment__list-item {
+  width: 300px;
+}
+
+.appointment__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 39px 37px 30px;
+  border-radius: 5px;
+  font-weight: 300;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #FFD600;
+}
+
+.appointment__item:last-child {
+  padding: 39px 50px 30px;
+  background-color: #FFE040;
+}
+
+.appointment__item::before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 87px;
+  height: 87px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  mix-blend-mode: multiply;
+  margin-bottom: 18px;
+  content: "";
+}
+
+.appointment__item:nth-child(1)::before {
+  background-image: url("../../img/treatment.png");
+}
+
+.appointment__item:nth-child(2)::before {
+  background-image: url("../../img/prosthetics.png");
+}
+
+.appointment__item-heading {
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.appointment__item-text {
+  margin: 0;
+}
+
+.appointment__form {
+  position: relative;
+  max-width: 540px;
+  top: -68px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0055B8;
+  color: #ffffff;
+  padding: 25px 33px 18px;
+  border-radius: 5px;
+}
+
+.appointment__form-heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.appointment__form-input {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #222222;
+  padding: 20px 14px;
+  margin-bottom: 12px;
+}
+
+.appointment__form-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.appointment__form-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.appointment__form-input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.appointment__form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.appointment__form-input:not(:placeholder-shown) {
+  background-color: #fff;
+  border: 1px solid #0055B8;
+}
+
+.appointment__form-checkbox-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.appointment__form-span {
+  max-width: 256px;
+  width: 100%;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.appointment__form-checkbox-style {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-size: 24px 17px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.appointment__form-checkbox:checked + .appointment__form-checkbox-style {
+  background-image: url("../../img/check.svg");
+}
 /*# sourceMappingURL=main.css.map */
