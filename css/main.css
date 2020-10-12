@@ -499,12 +499,21 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.button--blue:hover {
+.button--blue:hover,
+.button--yellow:hover {
   opacity: 0.8;
 }
 
-.button--blue:active {
+.button--blue:active,
+.button--yellow:avtive {
   opacity: 0.6;
+}
+
+.button--yellow {
+  background-color: #FFD600;
+  color: #272727;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .site-header {
