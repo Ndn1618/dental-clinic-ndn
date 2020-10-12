@@ -132,3 +132,40 @@
 .appointment__form-checkbox:checked + .appointment__form-checkbox-style {
   background-image: url("../../img/check.svg");
 }
+
+@include breakpoint-down (1024px) {
+  .appointment__container {
+    padding: 0;
+  }
+}
+
+@include breakpoint-down (1000px) {
+  .appointment__list-item {
+    width: 270px;
+  }
+
+  .appointment__form {
+    top: -44px;
+  }
+}
+
+@include breakpoint-down (900px) {
+  .appointment__container {
+    justify-content: center;
+  }
+
+  .appointment__item:first-child {
+    display: none;
+  }
+}
+
+@include breakpoint-down (690px) {
+  .appointment__list,
+  .appointment__item:last-child {
+    display: none;
+  }
+
+  .appointment__form {
+    top: 0;
+  }
+}
