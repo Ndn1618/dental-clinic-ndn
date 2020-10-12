@@ -1168,7 +1168,7 @@ img {
 .appointment__form {
   position: relative;
   max-width: 540px;
-  top: -68px;
+  top: -90px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1261,6 +1261,19 @@ img {
   background-image: url("../../img/check.svg");
 }
 
+.appointment__button {
+  margin-bottom: 22px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .appointment__item:nth-child(1)::before {
+    background-image: url("../../img/treatment@2x.png");
+  }
+  .appointment__item:nth-child(2)::before {
+    background-image: url("../../img/prosthetics@2x.png");
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .appointment__container {
     padding: 0;
@@ -1272,7 +1285,7 @@ img {
     width: 270px;
   }
   .appointment__form {
-    top: -44px;
+    top: -64px;
   }
 }
 
