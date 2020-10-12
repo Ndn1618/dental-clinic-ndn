@@ -1262,30 +1262,45 @@ img {
   margin-bottom: 12px;
 }
 
-.appointment__form-input::-webkit-input-placeholder,
-.appointment__form-input:focus::-webkit-input-placeholder {
+.appointment__form-input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input:-ms-input-placeholder,
-.appointment__form-input:focus:-ms-input-placeholder {
+.appointment__form-input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input::-ms-input-placeholder,
-.appointment__form-input:focus::-ms-input-placeholder {
+.appointment__form-input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input::placeholder,
-.appointment__form-input:focus::placeholder {
+.appointment__form-input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__form-input:not(:placeholder-shown),
-.appointment__form-input:focus {
+.appointment__form-input:not(:placeholder-shown) {
   background-color: #fff;
   border: 1px solid #0055B8;
+}
+
+.appointment__form-input:focus {
+  background-color: #fff;
+}
+
+.appointment__form-input:focus::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.appointment__form-input:focus:-ms-input-placeholder {
+  color: #222222;
+}
+
+.appointment__form-input:focus::-ms-input-placeholder {
+  color: #222222;
+}
+
+.appointment__form-input:focus::placeholder {
+  color: #222222;
 }
 
 .appointment__form-checkbox-span {
