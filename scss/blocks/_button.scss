@@ -33,13 +33,29 @@
 }
 
 .button--blue:active,
-.button--yellow:avtive {
+.button--yellow:active,
+.button--feedback:active {
   opacity: 0.6;
 }
 
 .button--yellow {
   background-color: $yellow;
   color: $dark-text;
-  text-transform: capitalize;
+  text-transform: none;
   transition: opacity 0.3s ease;
+}
+
+.button--feedback {
+  border: 2px solid $blue;
+  color: #4D4D4D;
+  background-color: #ffffff;
+  text-transform: none;
+  transition: background-color 0.3s ease,
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.button--feedback:hover {
+  background-color: $blue;
+  color: #ffffff;
 }
