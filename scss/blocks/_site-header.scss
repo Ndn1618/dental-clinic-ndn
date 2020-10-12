@@ -109,3 +109,11 @@
     display: none;
   }
 }
+
+@include breakpoint-down (690px) {
+  .body--nojs .site-header {
+    position: relative;
+    top: 0;
+    padding-bottom: 460px;
+  }
+}

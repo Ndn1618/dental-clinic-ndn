@@ -446,6 +446,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 690px) {
+  .body--nojs {
+    padding-top: 0;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -701,6 +707,14 @@ img {
   }
 }
 
+@media only screen and (max-width: 690px) {
+  .body--nojs .site-header {
+    position: relative;
+    top: 0;
+    padding-bottom: 460px;
+  }
+}
+
 .sitenav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -953,22 +967,52 @@ img {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 690px) {
   .sitenav--nojs .sitenav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    background-color: #0055B8;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 117px;
   }
   .sitenav--nojs .sitenav-social__links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    z-index: 2;
+    bottom: -436px;
+    left: 0;
+    background-color: #0055B8;
   }
-  .sitenav--nojs .sitenav-social__link:nth-of-type(2),
-  .sitenav--nojs .sitenav-social__link:nth-of-type(3) {
-    margin-left: 0;
+  .sitenav--nojs .sitenav__item {
+    margin: 0;
+  }
+  .sitenav--nojs .item__link {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    color: #FFD600;
+    border: 1px solid #FFD600;
+    text-transform: uppercase;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  .sitenav--nojs .item:active .item__link {
+    color: #0055B8;
+    background-color: #FFD600;
   }
 }
 
@@ -2639,7 +2683,7 @@ img {
     padding-right: 36px;
   }
   .location__link-img {
-    width: 800px;
+    max-width: 800px;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;

@@ -31,3 +31,9 @@ img {
     padding-top: 68px;
   }
 }
+
+@include breakpoint-down (690px) {
+  .body--nojs {
+    padding-top: 0;
+  }
+}
